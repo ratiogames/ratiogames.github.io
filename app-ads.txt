@@ -1,0 +1,4 @@
+# app-ads.txt for Ratio Games (https://ratiogames.github.io/app-ads.txt)
+# PLACEHOLDER: once AdMob shows the publisher id (Account -> Settings -> Publisher ID), replace
+# pub-XXXXXXXXXXXXXXXX below with it and remove the leading "# " from the line so it becomes active.
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

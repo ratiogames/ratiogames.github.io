@@ -1,0 +1,86 @@
+:root {
+  --bg: #f6f4ee;
+  --surface: #ffffff;
+  --text: #22212b;
+  --muted: #5d5b6a;
+  --accent: #2f6d3a;
+  --accent-text: #ffffff;
+  --border: #dcd8cc;
+  --badge: #f0e3b6;
+  --badge-text: #5a4500;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17161d;
+    --surface: #211f29;
+    --text: #ece9f2;
+    --muted: #a7a3b5;
+    --accent: #7fcf8c;
+    --accent-text: #10210f;
+    --border: #35323f;
+    --badge: #4a3d12;
+    --badge-text: #f5dc8a;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main, header, footer { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { padding-top: 40px; padding-bottom: 8px; }
+footer { padding-top: 32px; padding-bottom: 40px; color: var(--muted); font-size: 0.9rem; }
+h1, h2, h3, .brand {
+  font-family: "Pixelify Sans", system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+h1 { font-size: 2.4rem; margin: 0.2em 0 0.3em; }
+h2 { font-size: 1.5rem; margin: 2em 0 0.5em; }
+h3 { font-size: 1.15rem; margin: 1.5em 0 0.4em; }
+.brand { font-size: 1.2rem; color: var(--text); text-decoration: none; }
+a { color: var(--accent); text-underline-offset: 2px; }
+.lead { font-size: 1.15rem; color: var(--muted); margin-top: 0; }
+.muted { color: var(--muted); }
+.card {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.card h2 { margin-top: 0; }
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--badge);
+  color: var(--badge-text);
+  border-radius: 4px;
+  padding: 2px 8px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 4px;
+  margin: 4px 8px 4px 0;
+}
+.links { list-style: none; padding: 0; }
+.links li { margin: 6px 0; }
+.lang { float: right; font-size: 0.95rem; }
+nav.toc { background: var(--surface); border: 2px solid var(--border); border-radius: 6px; padding: 8px 20px; }
+nav.toc ol { padding-left: 1.2em; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: var(--surface); }
+code { font-size: 0.92em; }
