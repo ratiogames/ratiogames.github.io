@@ -19,7 +19,7 @@ Plain HTML + one `style.css`; no JavaScript, no trackers.
 | Placeholder | Where |
 |---|---|
 | Contact email (now `ratiogamestudio@gmail.com`; done) | `index.html` (1x, mailto + text); `pixel-strategies/privacy.html` (sections 1, 10, 13, each mailto + text); `pixel-strategies/privacy-tr.html` (sections 1, 10, 13, each mailto + text) |
-| AdMob publisher id `pub-XXXXXXXXXXXXXXXX` | `app-ads.txt` (replace the id, then remove the leading `# ` from the last line) |
+| AdMob publisher id (now `pub-4253580448615568`; done) | `app-ads.txt` |
 | Google Play link (live once the app is published) | `index.html` (button URL `https://play.google.com/store/apps/details?id=com.ratiogames.pixelstrategies`; remove the "Coming soon" badge and the "(coming soon)" button text) |
 | Effective date `2026-10-26` | `pixel-strategies/privacy.html` and `pixel-strategies/privacy-tr.html` (header) |
 
