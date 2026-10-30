@@ -17,15 +17,15 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a></span>
   <h1>Pixel Strategies privacy policy</h1>
-  <p class="muted">Effective date: 2026-10-26</p>
+  <p class="muted">Effective date: 2026-10-30</p>
 </header>
 
 <main>
   <p>This policy explains what information is collected when you play <strong>Pixel Strategies</strong> on Android,
     who collects it, why, and the choices you have. The short version: we (Ratio Games) do not run any servers for
     the game, do not ask you to create an account with us, and do not sell your data. The game uses a few Google
-    services, mainly for ads, purchases and optional cloud saves, and those services collect some information as
-    described below.</p>
+    services, mainly for ads, purchases and optional cloud saves, and Unity's online services for optional online
+    multiplayer. Those services collect some information as described below.</p>
 
   <nav class="toc" aria-label="Contents">
     <ol>
@@ -35,7 +35,7 @@
       <li><a href="#consent">Consent and personalised ads</a></li>
       <li><a href="#purchases">Purchases (Google Play Billing)</a></li>
       <li><a href="#cloud">Sign-in and cloud saves (Google Play Games)</a></li>
-      <li><a href="#unity">Game engine (Unity)</a></li>
+      <li><a href="#unity">Online multiplayer and game engine (Unity)</a></li>
       <li><a href="#sharing">What we do not do</a></li>
       <li><a href="#children">Children</a></li>
       <li><a href="#retention">Retention and deletion</a></li>
@@ -112,12 +112,25 @@
     Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. If you are not signed
     in, the game works normally and your saves stay on the device only.</p>
 
-  <h2 id="unity">7. Game engine (Unity)</h2>
-  <p>Pixel Strategies is built with the Unity engine. We have not enabled Unity Analytics, Unity Cloud Diagnostics or
-    any other Unity Gaming Services in the game. Like other Unity games, the engine itself may send limited,
-    non-identifying technical information about the device (such as hardware model and operating system) to Unity
-    Technologies when the game first runs. See the
-    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>.</p>
+  <h2 id="unity">7. Online multiplayer and game engine (Unity)</h2>
+  <p><strong>Online multiplayer</strong> is optional and uses Unity Gaming Services (Authentication, Lobby and Relay)
+    from Unity Technologies. Nothing is sent to these services unless you choose <em>Find match</em>, <em>Create
+    private game</em> or <em>Join with code</em> on the Multiplayer screen. When you do:</p>
+  <ul>
+    <li>the game signs you in <strong>anonymously</strong>: Unity creates a random player ID for this installation.
+      You don't enter an email, password or any account details;</li>
+    <li>the lobby holds your player ID, the colour you picked and a display name. In <strong>public matches</strong>
+      the name is a random one such as "Player 1234"; in <strong>private matches</strong> (joined with a code you
+      share) it is the name you typed;</li>
+    <li>during the match, the moves and game state are passed between the players' devices through Unity's Relay
+      servers, which see your device's IP address to connect it. Other players don't see your IP address.</li>
+  </ul>
+  <p>Unity processes this data to run the online match, under the
+    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>.
+    The game has no chat. Hot-seat multiplayer (several players on one phone) stays on your device.</p>
+  <p><strong>Game engine:</strong> like other Unity games, the engine itself may send limited technical information
+    about the device (such as hardware model and operating system) to Unity Technologies when the game first runs.
+    We have not enabled Unity Analytics or Unity Cloud Diagnostics.</p>
 
   <h2 id="sharing">8. What we do not do</h2>
   <ul>
@@ -125,7 +138,7 @@
     <li>We do not run our own servers for the game, and we do not add our own analytics, tracking or crash
       reporting.</li>
     <li>We do not sell your personal information, and we do not share it with anyone except as described above
-      (Google services that the game relies on).</li>
+      (the Google and Unity services that the game relies on).</li>
     <li>The game does not access your contacts, photos, camera, microphone or precise location.</li>
   </ul>
 
@@ -147,6 +160,10 @@
     <li><strong>Advertising and Google data:</strong> retained by Google under its own policies. You can manage it at
       <a href="https://myaccount.google.com/">myaccount.google.com</a> and reset your advertising ID in Android
       settings.</li>
+    <li><strong>Online multiplayer (Unity):</strong> lobbies are temporary and are removed by Unity once they are
+      empty or inactive. Your anonymous player ID is kept by Unity until it is deleted; clearing the game's storage
+      or uninstalling it makes the game use a new one. To have your Unity player data deleted, email us (we can
+      delete it from Unity's dashboard).</li>
     <li><strong>Purchase records:</strong> kept by Google Play and in our Play Console records as long as needed for
       accounting, tax and legal obligations.</li>
     <li><strong>Emails you send us:</strong> kept only as long as needed to answer you. You can ask us to delete
