@@ -1,6 +1,7 @@
 # ratiogames.github.io
 
-Static site for Ratio Games: studio landing page, Pixel Strategies privacy policy (EN + TR) and `app-ads.txt`.
+Static site for Ratio Games: studio landing page, Pixel Strategies privacy policy and terms of service (EN + TR)
+and `app-ads.txt`.
 Plain HTML + one `style.css`; no JavaScript, no trackers.
 
 ## Publish (GitHub Pages)
@@ -11,6 +12,7 @@ Plain HTML + one `style.css`; no JavaScript, no trackers.
 4. Repo Settings -> Pages -> Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
 5. After a minute the site is live at https://ratiogames.github.io/
    - Privacy policy URL for the Play Console: https://ratiogames.github.io/pixel-strategies/privacy.html
+   - Terms of service: https://ratiogames.github.io/pixel-strategies/terms.html (TR: `terms-tr.html`)
    - app-ads.txt: https://ratiogames.github.io/app-ads.txt (AdMob crawls it at the root of the developer website;
      set https://ratiogames.github.io as the "Website" in the Play Console store listing).
 
@@ -21,7 +23,7 @@ Plain HTML + one `style.css`; no JavaScript, no trackers.
 | Contact email (now `ratiogamestudio@gmail.com`; done) | `index.html` (1x, mailto + text); `pixel-strategies/privacy.html` (sections 1, 10, 13, each mailto + text); `pixel-strategies/privacy-tr.html` (sections 1, 10, 13, each mailto + text) |
 | AdMob publisher id (now `pub-4253580448615568`; done) | `app-ads.txt` |
 | Google Play link (live once the app is published) | `index.html` (button URL `https://play.google.com/store/apps/details?id=com.ratiogames.pixelstrategies`; remove the "Coming soon" badge and the "(coming soon)" button text) |
-| Effective date `2026-10-26` | `pixel-strategies/privacy.html` and `pixel-strategies/privacy-tr.html` (header) |
+| Effective date `2026-10-30` (was 2026-10-26) | `pixel-strategies/privacy.html` and `pixel-strategies/privacy-tr.html` (header) |
 
 Replace the email everywhere in one go:
 
@@ -31,6 +33,6 @@ grep -rl 'ratiogames.contact@gmail.com' . | xargs sed -i '' 's/ratiogames.contac
 
 ## Notes
 
-- `privacy-tr.html` is a machine translation: have a native speaker review it before publishing.
+- `privacy-tr.html` and `terms-tr.html` are machine drafts: have a native speaker review them before publishing.
 - Keep the policy in sync with the game: re-check it whenever an SDK is added (analytics, crash reporting, another
   ad network, Unity Gaming Services) or the in-game "Settings -> Purchases & privacy -> Privacy options" path changes.
