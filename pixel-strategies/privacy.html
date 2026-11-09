@@ -17,15 +17,15 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a></span>
   <h1>Pixel Strategies privacy policy</h1>
-  <p class="muted">Effective date: 2026-11-08</p>
+  <p class="muted">Effective date: 2026-11-09</p>
 </header>
 
 <main>
   <p>This policy explains what information is collected when you play <strong>Pixel Strategies</strong> on Android,
     who collects it, why, and the choices you have. The short version: we (Ratio Games) do not ask you to create an
     account with us, do not have servers of our own, and do not sell your data. The game uses a few Google services,
-    mainly for ads, purchases, cloud saves, sign-in and invite notifications, and Unity's online services for online
-    multiplayer, ranked matches, friends and chat. Those services collect some information as described below.</p>
+    mainly for ads, purchases, cloud saves, sign-in and notifications, and Unity's online services for online
+    multiplayer, ranked matches, friends, chat, clans and the season pass. Those services collect some information as described below.</p>
 
   <nav class="toc" aria-label="Contents">
     <ol>
@@ -33,13 +33,14 @@
       <li><a href="#device">Information that stays on your device</a></li>
       <li><a href="#ads">Advertising (Google AdMob)</a></li>
       <li><a href="#consent">Consent and personalised ads</a></li>
-      <li><a href="#purchases">Purchases (Google Play Billing)</a></li>
+      <li><a href="#purchases">Purchases, season pass and skins</a></li>
       <li><a href="#cloud">Sign-in and cloud saves (Google Play Games)</a></li>
       <li><a href="#unity">Online multiplayer and game engine (Unity)</a></li>
       <li><a href="#ranked">Ranked matches and the leaderboard</a></li>
       <li><a href="#friends">Friends and invites</a></li>
       <li><a href="#push">Notifications (Firebase Cloud Messaging)</a></li>
       <li><a href="#chat">Chat, reports and moderation</a></li>
+      <li><a href="#clans">Clans</a></li>
       <li><a href="#sharing">Who sees your information, and what we do not do</a></li>
       <li><a href="#children">Children</a></li>
       <li><a href="#retention">Retention and deletion</a></li>
@@ -58,8 +59,9 @@
   <p>Your saved games, settings (such as volume and language), tutorial progress, the record of whether you bought
     "Remove Ads", the name and colour you use in private online games, and your list of recently met online players
     (the last 20) are stored locally on your phone, in the game's private app storage. We do not receive this
-    information. Chat messages are kept only in the game's memory during a match and are forgotten when you leave it
-    or close the game. Uninstalling the game deletes all of this (unless you use cloud saves, see section 6).</p>
+    information. Chat messages in lobbies and matches are kept only in the game's memory during a match and are
+    forgotten when you leave it or close the game (clan chat is stored, see section 12). Uninstalling the game
+    deletes all of this (unless you use cloud saves, see section 6).</p>
 
   <h2 id="ads">3. Advertising (Google AdMob)</h2>
   <p>The game is free and is paid for by ads. It shows full-screen ads between matches and offers optional rewarded
@@ -98,16 +100,32 @@
   <p>You can change your choice at any time in the game: open <strong>Settings &rarr; Purchases &amp; privacy &rarr;
     Privacy options</strong>. This button appears in regions where Google requires it.</p>
 
-  <h2 id="purchases">5. Purchases (Google Play Billing)</h2>
-  <p>The game offers one optional, one-time in-app purchase, "Remove Ads". Payments are handled entirely by
-    <strong>Google Play</strong>. We never see or store your card or payment details. Google Play tells the game
-    whether you own the purchase (so it can be restored if you reinstall), and Google shares order information with
-    us as the developer through the Google Play Console, as for any Play purchase (for example the order id, the
-    product, the price, the date and your country). Payments are covered by the
+  <h2 id="purchases">5. Purchases, season pass and skins</h2>
+  <p>The game offers optional in-app purchases: <strong>"Remove Ads"</strong>, a <strong>season pass</strong> (one
+    per season, which unlocks the premium rewards of that season and turns off ads between matches until the season
+    ends) and <strong>skins</strong> (cosmetic looks for units and buildings, sold as packs or single pieces). All of
+    them are one-time purchases; there is no premium currency and there are no random paid boxes. Payments are handled
+    entirely by <strong>Google Play</strong>. We never see or store your card or payment details. Google Play tells
+    the game what you own (so purchases can be restored), and Google shares order information with us as the developer
+    through the Google Play Console, as for any Play purchase (for example the order id, the product, the price, the
+    date and your country). Payments are covered by the
     <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice">Google Payments Privacy Notice</a>
-    and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The purchase is processed
-    through the Unity In-App Purchasing library, which talks to Google Play on your device; we have not connected it
-    to any Unity online service.</p>
+    and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Purchases go through the Unity
+    In-App Purchasing library, which talks to Google Play on your device.</p>
+  <p><strong>Season pass and skin purchases are checked on the server.</strong> After you buy one, the game sends the
+    product id and Google Play's purchase token to our Cloud Code script (section 7). The script asks Google Play
+    whether the purchase is valid, then adds what you bought to your Unity player account. To stop one purchase from
+    being used on several accounts, it stores a record of each redeemed token (a one-way hash of the token, never the
+    token itself, with your player ID, the product and the time). "Remove Ads" is not sent to our server; Google Play
+    alone tells the game you own it.</p>
+  <p><strong>Pass progress and cosmetics</strong> are stored in your protected Unity Cloud Save data, which only our
+    script can change: the season, your pass XP and level, a short log of recent matches you reported for XP (time,
+    XP and match id, used for the daily limits), weekly challenge progress, the rewards you claimed, starting-bonus
+    tokens, which seasons' premium pass you own, the skin pieces, badges and titles you own, what you have equipped,
+    and your preferred multiplayer map. Other players see your equipped skins, badge and title in online matches,
+    lobbies, the Friends list and the leaderboard. The season pass and skins work with an anonymous Unity account too
+    (section 7); in that case they are tied to that account, so sign in to Play Games if you want to keep them on
+    another device.</p>
 
   <h2 id="cloud">6. Sign-in and cloud saves (Google Play Games)</h2>
   <p>The game can use <strong>Google Play Games</strong> to back up your saved games and to identify you online.
@@ -121,7 +139,7 @@
       stored and protected by Google under the <a href="https://policies.google.com/privacy">Google Privacy
       Policy</a>;</li>
     <li>your Play Games profile is linked to your Unity player account (section 7), so you can play ranked matches,
-      add friends and type in chat (sections 8 to 11). Your gamer name is shown to other players there. We never
+      add friends, type in chat and join clans (sections 8 to 12). Your gamer name is shown to other players there. We never
       receive your Google account password or email address.</li>
   </ul>
   <p>If you are not signed in, your saves stay on the device only, and online you can only play private games.</p>
@@ -129,7 +147,7 @@
   <h2 id="unity">7. Online multiplayer and game engine (Unity)</h2>
   <p><strong>Online features</strong> use Unity Gaming Services from Unity Technologies: Authentication (player
     accounts), Lobby and Relay (matches), Friends, Leaderboards, Cloud Save (storage) and Cloud Code (small scripts we
-    wrote that run on Unity's servers, see section 12).</p>
+    wrote that run on Unity's servers, see section 13).</p>
   <ul>
     <li><strong>Player account:</strong> when the game opens its main menu, it signs you in to Unity Authentication
       so that friend requests and invites can reach you. If you are not signed in to Play Games, this is an
@@ -186,12 +204,15 @@
     Google service. When you are signed in to Play Games, Firebase gives your device a <strong>notification
     token</strong> (an ID that lets a notification be delivered to this app on this device). Our Cloud Code script
     stores the token, with the time it was last updated, in your protected Unity Cloud Save data, which other players
-    cannot read. It is used only to send you a notification when a friend invites you to a lobby or a party; we don't
-    send advertising or other notifications. The notification shows the friend's name. We have not enabled Firebase
+    cannot read. It is used only to send you a notification when a friend invites you to a lobby or a party, or for
+    your clan (section 12): when a player asks to join your clan (sent to the Leader and Admins), when a clan invites
+    you, or when a clan accepts your request. We don't send advertising or other notifications, and clan chat
+    messages don't trigger notifications. A notification shows the name of the player who sent it (and, for clans, the
+    clan's tag and name). We have not enabled Firebase
     Analytics or any other Firebase feature.</p>
   <p>On Android 13 and newer, the game asks once for permission to show notifications. You can turn notifications
-    off at any time in <em>Settings &rarr; Apps &rarr; Pixel Strategies &rarr; Notifications</em>; invites then only
-    show while the game is open. Google processes the token under the
+    off at any time in <em>Settings &rarr; Apps &rarr; Pixel Strategies &rarr; Notifications</em>; invites and clan
+    news then only show while the game is open. Google processes the token under the
     <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the
     <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
@@ -205,7 +226,8 @@
     not allowed.</p>
   <p><strong>Not stored:</strong> messages are relayed to the players in the chat channel through the device of the
     player who hosts the match and Unity's Relay servers. They are not stored on any server; each player's game keeps
-    the recent messages in memory during the match only. The one exception is a report (below).</p>
+    the recent messages in memory during the match only. The exceptions are reports (below) and clan chat, which is
+    stored (section 12).</p>
   <p><strong>Reports:</strong> you can report a player or a message (choose a reason and, if you like, add a short
     note). A report sends to our Cloud Code script, which stores in Unity Cloud Save: your player ID, the reported
     player's ID and name, the reason, your note, where it happened (lobby or match), the time, and up to the
@@ -219,33 +241,81 @@
     and length). Other players' games check whether players in their lobby are muted, so that muted players' messages
     are not passed on; they see nothing else from this record. If you think a sanction is a mistake, email us.</p>
 
-  <h2 id="sharing">12. Who sees your information, and what we do not do</h2>
+  <h2 id="clans">12. Clans</h2>
+  <p>Players signed in to Play Games can create and join <strong>clans</strong> (groups of up to 30 players).
+    Creating a clan needs the current season's premium pass. Clans are run by our Cloud Code script, which stores the
+    following in Unity Cloud Save:</p>
+  <ul>
+    <li><strong>The clan:</strong> its name, tag (2 to 4 letters or digits, shown as [TAG]) and emblem (a pattern and
+      two colours), its join settings (open, by request or by invitation only, and a minimum rating), who leads it, who
+      created it and when, and when it was last renamed. The <strong>name, tag and emblem are public</strong>: any
+      player can find the clan by searching, see it in the clan rankings, and see the tag next to its members' names
+      in lobbies, matches, friends lists and the leaderboard. Names and tags are checked against the same English and
+      Turkish word filter as chat.</li>
+    <li><strong>Members:</strong> each member's player ID, gamer name, role (Leader, Admin or Member), the date they
+      joined and the date of their last role change, and their ranked rating. Any player who opens the clan's profile
+      can see its members' names, roles and ratings. Your own player data also keeps which clan you are in, when you
+      joined, the end of any waiting time before you can join a clan again (24 hours after leaving or being removed),
+      the seasons in which you created a clan, the clans you asked to join and the invitations you received.</li>
+    <li><strong>Join requests and invitations:</strong> a request holds your player ID, gamer name, rating and the time;
+      an invitation holds the invited player's ID and name, who invited them and the time. The clan's Leader and Admins
+      see them. They expire after 7 days.</li>
+    <li><strong>Clan points and rankings:</strong> when a ranked match you played as a clan member is final, the
+      script adds points to your clan by your place in that match. For the current season it keeps, per clan, the
+      points, the ids of the last 200 credited matches, and for each member the points they brought, the number of
+      ranked matches credited and their rating at the last one. The clan rankings (by clan rating and by points) are
+      public. At the end of each season the final standings are kept as a record of that season, and members who
+      contributed get a reward (badge, title and pass XP) that is stored with their pass data (section 5).</li>
+    <li><strong>Clan chat:</strong> unlike other chat, clan chat is <strong>stored on the server</strong> so that
+      members can read it later. The script keeps the <strong>last 100 messages</strong> of each clan (sender's player
+      ID and gamer name, text and time), plus short automatic lines such as "joined" or "was promoted". Older messages
+      are deleted as new ones arrive, and the whole chat is deleted when the clan is disbanded. Only current members can
+      read it. Messages are filtered (offensive words are masked before they are stored) and follow the same rules as
+      other chat (120 characters, about one per second, muted players can't send). To enforce the rate limit, the
+      script keeps the time of each member's last message. Messages you wrote stay in the clan chat after you leave
+      until they are pushed out by newer ones.</li>
+    <li><strong>Reports:</strong> you can report a clan (for example for an offensive name). The report stores your
+      player ID, the clan's id, [TAG] and name, its emblem and its Leader's ID, the reason, your note and the time, in
+      the same report queue as other reports (section 11), and is deleted once we have reviewed it. Clan chat messages
+      can be reported like any other chat message. To limit abuse, your player data keeps the times of the clan reports
+      you sent in the last hour.</li>
+    <li><strong>Moderation:</strong> if a clan's name, tag or emblem breaks the rules, we may <strong>rename</strong> it
+      (to a neutral name such as "Clan 1234", after which the Leader can choose a new name once without waiting) or
+      <strong>disband</strong> it. Mutes and bans (section 11) also apply to clan chat.</li>
+  </ul>
+  <p>When a clan is disbanded (by its Leader, by moderation, or when its last member leaves), its details, member
+    list, requests, invitations and chat are deleted, and its name and tag become free for others. Season records and
+    rewards already earned are kept.</p>
+
+  <h2 id="sharing">13. Who sees your information, and what we do not do</h2>
   <ul>
     <li><strong>Other players</strong> see what the game shows them: your display name or gamer name, colour, team and
-      moves in your matches; your chat messages in your channels; your rating and tier on the leaderboard; and, if
+      moves in your matches; your chat messages in your channels; your rating and tier on the leaderboard; your
+      equipped skins, badge and title; your clan's tag (and, on its profile, your name, role and rating); and, if
       you are friends, your presence.</li>
     <li><strong>Service providers</strong> process data for us as described above: Google (AdMob, Play Billing, Play
       Games, Firebase Cloud Messaging) and Unity Technologies (Unity Gaming Services and the game engine). AdMob also
       uses data for its own advertising purposes, as explained in sections 3 and 4.</li>
     <li><strong>We (Ratio Games)</strong> can see the data stored in our Unity project (player accounts, ratings,
-      match records, reports and sanctions) through Unity's dashboard and our own moderation tool, and we use it only
-      to run the online features, keep ranked play fair and handle reports.</li>
+      match records, pass progress and owned items, clans and clan chat, reports and sanctions) through Unity's dashboard and our own moderation tool, and we use it only
+      to run the online features and purchases, keep ranked play fair and handle reports.</li>
     <li>We do not ask you to create an account with Ratio Games, and we never receive your Google password or email
       address.</li>
     <li>We do not have servers of our own. Our only server-side code is a few small Cloud Code scripts that run on
-      Unity Gaming Services (for ratings, notifications, reports and sanctions). We do not add our own analytics,
+      Unity Gaming Services (for ratings, notifications, reports and sanctions, the season pass and purchases, and
+      clans). We do not add our own analytics,
       tracking or crash reporting.</li>
     <li>We do not sell your personal information, and we do not share it with anyone except as described in this
       policy, or where the law requires it.</li>
     <li>The game does not access your contacts, photos, camera, microphone or precise location.</li>
   </ul>
 
-  <h2 id="children">13. Children</h2>
+  <h2 id="children">14. Children</h2>
   <p>Pixel Strategies is not directed at children under 13 (or the minimum age required in your country), and we do
     not knowingly collect personal information from children. If you believe a child has provided personal
     information through the game, please contact us and we will help to have it removed.</p>
 
-  <h2 id="retention">14. Retention and deletion</h2>
+  <h2 id="retention">15. Retention and deletion</h2>
   <ul>
     <li><strong>Data on your device:</strong> kept until you delete it. Uninstalling the game, or clearing its
       storage in Android settings (<em>Settings &rarr; Apps &rarr; Pixel Strategies &rarr; Storage &rarr; Clear
@@ -259,10 +329,15 @@
       <a href="https://myaccount.google.com/">myaccount.google.com</a> and reset your advertising ID in Android
       settings.</li>
     <li><strong>Lobbies, invites, parties and chat:</strong> lobbies are temporary and are removed by Unity once they
-      are empty or inactive; invites expire after 10 minutes; parties and chat messages are not stored.</li>
+      are empty or inactive; invites expire after 10 minutes; parties and chat messages in lobbies and matches are not
+      stored.</li>
+    <li><strong>Clans:</strong> a clan's data is kept while the clan exists and deleted when it is disbanded (section
+      12). Clan chat keeps only the last 100 messages. Join requests and clan invitations expire after 7 days. Each
+      season's final clan standings and the rewards earned are kept as records of that season.</li>
     <li><strong>Unity player account and the data linked to it</strong> (player ID, player name, rating, leaderboard
-      entries, friends, requests and blocks, notification token, report log and any sanction record): kept until the
-      account is deleted. An anonymous account is no longer used once you clear the game's storage or uninstall it
+      entries, friends, requests and blocks, notification token, pass progress, owned skins, badges and titles,
+      redeemed purchase records, clan membership, report log and any sanction record): kept until the account is
+      deleted. An anonymous account is no longer used once you clear the game's storage or uninstall it
       (the game then creates a new one); an account linked to Play Games is used again whenever you sign in. The
       notification token is also deleted when Firebase reports it as no longer valid (for example after you
       uninstall the game). Past seasons of the leaderboard may be kept as archived versions.</li>
@@ -278,22 +353,24 @@
   <p>To ask about or request deletion of any data related to the game, email
     <a href="mailto:ratiogamestudio@gmail.com">ratiogamestudio@gmail.com</a> (tell us your friend code, shown on the
     Friends screen, or your gamer name). We will delete your Unity player account and everything linked to it
-    (rating, leaderboard entries, friends, notification token and sanctions), and remove your player ID from ranked
-    match records and reports. If you were banned, we may keep the minimum needed to keep the ban in force. Most other
+    (rating, leaderboard entries, friends, notification token, pass progress, owned items and sanctions), remove you
+    from your clan (if you lead it, leadership passes to another member as when a Leader leaves; if you are its last
+    member, the clan is disbanded), delete your messages from the clan chat, and remove your player ID from ranked
+    match records, clan records and reports. If you were banned, we may keep the minimum needed to keep the ban in force. Most other
     data can be deleted directly by you as described above; we will help with anything else.</p>
 
-  <h2 id="rights">15. Your rights</h2>
+  <h2 id="rights">16. Your rights</h2>
   <p>Depending on where you live (for example under the GDPR in the EEA and UK, or under Turkey's KVKK), you may have
     the right to access, correct, delete or object to the processing of your personal data, to withdraw consent, and
     to complain to your local data protection authority. For data processed by Google, please use Google's tools and
     contacts linked above; for anything relating to us, email us.</p>
 
-  <h2 id="changes">16. Changes to this policy</h2>
+  <h2 id="changes">17. Changes to this policy</h2>
   <p>We may update this policy, for example when the game adds a feature or a service changes. The new version will
     be posted on this page with a new effective date. If a change is significant, we will also mention it in the
     game's update notes on Google Play.</p>
 
-  <h2 id="contact">17. Contact</h2>
+  <h2 id="contact">18. Contact</h2>
   <p>Ratio Games &middot; <a href="mailto:ratiogamestudio@gmail.com">ratiogamestudio@gmail.com</a></p>
 </main>
 
