@@ -17,7 +17,7 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a></span>
   <h1>Pixel Strategies privacy policy</h1>
-  <p class="muted">Effective date: 2026-11-09</p>
+  <p class="muted">Effective date: 2026-11-14</p>
 </header>
 
 <main>
@@ -200,19 +200,21 @@
     you.</p>
 
   <h2 id="push">10. Notifications (Firebase Cloud Messaging)</h2>
-  <p>To tell you about invites while the game is closed, the game uses <strong>Firebase Cloud Messaging</strong>, a
+  <p>To tell you about invites and your online matches while the game is closed, the game uses <strong>Firebase Cloud Messaging</strong>, a
     Google service. When you are signed in to Play Games, Firebase gives your device a <strong>notification
     token</strong> (an ID that lets a notification be delivered to this app on this device). Our Cloud Code script
-    stores the token, with the time it was last updated, in your protected Unity Cloud Save data, which other players
-    cannot read. It is used only to send you a notification when a friend invites you to a lobby or a party, or for
-    your clan (section 12): when a player asks to join your clan (sent to the Leader and Admins), when a clan invites
-    you, or when a clan accepts your request. We don't send advertising or other notifications, and clan chat
-    messages don't trigger notifications. A notification shows the name of the player who sent it (and, for clans, the
+    stores the token, with the time it was last updated and your "Turn notifications" setting, in your protected Unity
+    Cloud Save data, which other players cannot read. It is used only to send you a notification when a friend invites
+    you to a lobby or a party; for your clan (section 12): when a player asks to join your clan (sent to the Leader and
+    Admins), when a clan invites you, or when a clan accepts your request; and for public online matches: when it is
+    your turn, when the AI takes over your empire because you were away, and when your online match is found. We don't
+    send advertising notifications, and chat messages don't trigger notifications. A notification shows the name of the player who sent it (and, for clans, the
     clan's tag and name). We have not enabled Firebase
     Analytics or any other Firebase feature.</p>
   <p>On Android 13 and newer, the game asks once for permission to show notifications. You can turn notifications
     off at any time in <em>Settings &rarr; Apps &rarr; Pixel Strategies &rarr; Notifications</em>; invites and clan
-    news then only show while the game is open. Google processes the token under the
+    news then only show while the game is open. You can turn turn notifications off in the game's Settings
+    (<em>Turn notifications</em>); invites and clan news keep coming. Google processes the token under the
     <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the
     <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
