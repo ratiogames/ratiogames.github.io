@@ -2,7 +2,7 @@
 
 Static site for Ratio Games: studio landing page, Pixel Strategies privacy policy and terms of service (EN + TR)
 and `app-ads.txt`.
-Plain HTML + one `style.css`; no JavaScript, no trackers.
+Plain HTML + one `style.css`; no trackers. The only JavaScript: `pixel-strategies/index.html` opens `tr.html` when the browser language is Turkish (an "English" choice is remembered in localStorage).
 
 ## Publish (GitHub Pages)
 
@@ -20,10 +20,10 @@ Plain HTML + one `style.css`; no JavaScript, no trackers.
 
 | Placeholder | Where |
 |---|---|
-| Contact email (now `ratiogamestudio@gmail.com`; done) | `index.html` (1x, mailto + text); `pixel-strategies/privacy.html` (sections 1, 10, 13, each mailto + text); `pixel-strategies/privacy-tr.html` (sections 1, 10, 13, each mailto + text) |
+| Contact email (now `ratiogamestudio@gmail.com`; done) | `index.html` (1x, mailto + text); `pixel-strategies/privacy.html` (sections 1, 16, 19, each mailto + text); `pixel-strategies/privacy-tr.html` (sections 1, 16, 19, each mailto + text) |
 | AdMob publisher id (now `pub-4253580448615568`; done) | `app-ads.txt` |
 | Google Play link (live once the app is published) | `index.html` (button URL `https://play.google.com/store/apps/details?id=com.ratiogames.pixelstrategies`; remove the "Coming soon" badge and the "(coming soon)" button text) |
-| Effective date `2026-10-30` (was 2026-10-26) | `pixel-strategies/privacy.html` and `pixel-strategies/privacy-tr.html` (header) |
+| Effective date `2026-11-20` (was 2026-11-14; session 98 analytics section) | `pixel-strategies/privacy.html` and `pixel-strategies/privacy-tr.html` (header) |
 
 Replace the email everywhere in one go:
 

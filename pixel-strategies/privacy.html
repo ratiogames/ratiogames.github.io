@@ -17,7 +17,7 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a></span>
   <h1>Pixel Strategies privacy policy</h1>
-  <p class="muted">Effective date: 2026-11-14</p>
+  <p class="muted">Effective date: 2026-11-20 &middot; Last updated: 2026-11-20</p>
 </header>
 
 <main>
@@ -25,7 +25,10 @@
     who collects it, why, and the choices you have. The short version: we (Ratio Games) do not ask you to create an
     account with us, do not have servers of our own, and do not sell your data. The game uses a few Google services,
     mainly for ads, purchases, cloud saves, sign-in and notifications, and Unity's online services for online
-    multiplayer, ranked matches, friends, chat, clans and the season pass. Those services collect some information as described below.</p>
+    multiplayer, ranked matches, friends, chat, clans and the season pass. With your consent where the law requires it,
+    the game also sends anonymous usage statistics (analytics) to GameAnalytics, Unity Analytics and Google Analytics for
+    Firebase, so we can see how the game is played and improve it (section 13). Those services collect some information
+    as described below.</p>
 
   <nav class="toc" aria-label="Contents">
     <ol>
@@ -41,6 +44,7 @@
       <li><a href="#push">Notifications (Firebase Cloud Messaging)</a></li>
       <li><a href="#chat">Chat, reports and moderation</a></li>
       <li><a href="#clans">Clans</a></li>
+      <li><a href="#analytics">Analytics (usage statistics)</a></li>
       <li><a href="#sharing">Who sees your information, and what we do not do</a></li>
       <li><a href="#children">Children</a></li>
       <li><a href="#retention">Retention and deletion</a></li>
@@ -59,7 +63,8 @@
   <p>Your saved games, settings (such as volume and language), tutorial progress, the record of whether you bought
     "Remove Ads", the name and colour you use in private online games, and your list of recently met online players
     (the last 20) are stored locally on your phone, in the game's private app storage. We do not receive this
-    information. Chat messages in lobbies and matches are kept only in the game's memory during a match and are
+    information (except your language and whether you bought "Remove Ads", which are part of the usage statistics,
+    section 13). Chat messages in lobbies and matches are kept only in the game's memory during a match and are
     forgotten when you leave it or close the game (clan chat is stored, see section 12). Uninstalling the game
     deletes all of this (unless you use cloud saves, see section 6).</p>
 
@@ -97,6 +102,8 @@
     activity) or only for <strong>non-personalised ads</strong> (ads based on general context such as the app and
     your approximate location). Non-personalised ads still use some data, for example for frequency capping,
     measurement and fraud prevention. Where required by law in other regions, a similar choice may be shown.</p>
+  <p>Your choices in this form also decide whether the game may send <strong>usage statistics</strong> (section 13):
+    if you don't consent, none are sent.</p>
   <p>You can change your choice at any time in the game: open <strong>Settings &rarr; Purchases &amp; privacy &rarr;
     Privacy options</strong>. This button appears in regions where Google requires it.</p>
 
@@ -147,7 +154,7 @@
   <h2 id="unity">7. Online multiplayer and game engine (Unity)</h2>
   <p><strong>Online features</strong> use Unity Gaming Services from Unity Technologies: Authentication (player
     accounts), Lobby and Relay (matches), Friends, Leaderboards, Cloud Save (storage) and Cloud Code (small scripts we
-    wrote that run on Unity's servers, see section 13).</p>
+    wrote that run on Unity's servers, see section 14).</p>
   <ul>
     <li><strong>Player account:</strong> when the game opens its main menu, it signs you in to Unity Authentication
       so that friend requests and invites can reach you. If you are not signed in to Play Games, this is an
@@ -170,7 +177,8 @@
     Hot-seat multiplayer (several players on one phone) stays on your device.</p>
   <p><strong>Game engine:</strong> like other Unity games, the engine itself may send limited technical information
     about the device (such as hardware model and operating system) to Unity Technologies when the game first runs.
-    We have not enabled Unity Analytics or Unity Cloud Diagnostics.</p>
+    Unity Analytics is used for usage statistics as described in section 13; we have not enabled Unity Cloud
+    Diagnostics.</p>
 
   <h2 id="ranked">8. Ranked matches and the leaderboard</h2>
   <p>Every public online match is ranked. Ranked play needs Play Games sign-in. For it, our Cloud Code script stores
@@ -209,8 +217,9 @@
     Admins), when a clan invites you, or when a clan accepts your request; and for public online matches: when it is
     your turn, when the AI takes over your empire because you were away, and when your online match is found. We don't
     send advertising notifications, and chat messages don't trigger notifications. A notification shows the name of the player who sent it (and, for clans, the
-    clan's tag and name). We have not enabled Firebase
-    Analytics or any other Firebase feature.</p>
+    clan's tag and name). Besides Cloud Messaging, the only
+    Firebase feature the game uses is Google Analytics for Firebase, for usage statistics (section 13); the notification
+    token is not sent to it.</p>
   <p>On Android 13 and newer, the game asks once for permission to show notifications. You can turn notifications
     off at any time in <em>Settings &rarr; Apps &rarr; Pixel Strategies &rarr; Notifications</em>; invites and clan
     news then only show while the game is open. You can turn turn notifications off in the game's Settings
@@ -289,14 +298,66 @@
     list, requests, invitations and chat are deleted, and its name and tag become free for others. Season records and
     rewards already earned are kept.</p>
 
-  <h2 id="sharing">13. Who sees your information, and what we do not do</h2>
+  <h2 id="analytics">13. Analytics (usage statistics)</h2>
+  <p>To understand how the game is played (for example which screens players use, where new players stop in the
+    tutorial, how long matches last and which settings are too hard), the game sends <strong>usage statistics</strong>
+    to three analytics services. We use them only to fix problems, balance the game and decide what to improve, not
+    for advertising.</p>
+  <p><strong>What is sent:</strong></p>
+  <ul>
+    <li><strong>app interactions</strong>: the menu screens you open; when a game starts and ends, with its mode
+      (single player, scenario, hot-seat, tutorial, online), map, scenario, difficulty and result; in-game milestones
+      (such as your first building, first research or first conquered province) and short end-of-turn summaries (turn number and counts such as
+      provinces, buildings, technologies, armies, gold, wars and allies); tutorial progress; ad events (whether an ad
+      was shown, completed or skipped, and where in the game) and purchase events (the product, the result, the price
+      and the currency, but never your payment details);</li>
+    <li>a few <strong>settings</strong>: your game language, whether you are signed in to Play Games (yes or no only)
+      and whether you bought "Remove Ads";</li>
+    <li><strong>device information</strong> collected by the services themselves, such as device model, operating
+      system version, app version, screen size and language, and the time of each event;</li>
+    <li>your <strong>approximate location</strong> (country or region), which the services derive from your IP
+      address. The game does not use GPS location;</li>
+    <li>a <strong>random app-instance ID</strong> that each service creates for this installation of the game, so it can
+      count players and sessions. It is reset when you clear the game's storage or reinstall it.</li>
+  </ul>
+  <p><strong>Not linked to your Google account:</strong> the game does not send your Play Games player ID, your gamer
+    name, your friend code, chat messages or any other account information to the analytics services, and we do not use
+    these statistics to identify you. GameAnalytics and Google Analytics for Firebase only know their own random
+    app-instance ID. <strong>Unity Analytics is the exception:</strong> because the game signs every player in to Unity
+    (section 7), Unity's analytics SDK also links its statistics to your Unity player ID. That ID is random and contains no
+    name, but if you signed in with Play Games it is the same Unity account that is linked to your Play Games profile
+    (section 6). We may use this to compare play statistics with online data such as ratings and match records.</p>
+  <p><strong>The services</strong> (they process the data for us, as our processors):</p>
+  <ul>
+    <li><strong>GameAnalytics</strong> (GameAnalytics ApS, Denmark):
+      <a href="https://gameanalytics.com/privacy">GameAnalytics Privacy Policy</a>;</li>
+    <li><strong>Unity Analytics</strong> (Unity Technologies), part of Unity Gaming Services:
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>;</li>
+    <li><strong>Google Analytics for Firebase</strong> (Google LLC, or Google Ireland Limited for users in the EEA, UK
+      and Switzerland): <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. We have not linked it to Google Ads and
+      do not use it for advertising.</li>
+  </ul>
+  <p><strong>Your choice:</strong> if you are in the European Economic Area, the United Kingdom or Switzerland, no
+    statistics are sent unless you agree in the consent form shown when the game starts (section 4). Everywhere, you
+    can turn statistics off at any time in the game: <strong>Settings &rarr; Share usage data</strong>. When it is off,
+    the game stops sending events and tells the services to stop collecting.</p>
+  <p><strong>How long:</strong> each service keeps the data for a limited time under its own retention rules and then
+    deletes or anonymises it. Google Analytics for Firebase keeps event data linked to the app-instance ID for the
+    period set in our project (2 months by default, at most 14 months); Unity Analytics keeps raw event data for up to
+    13 months by default; GameAnalytics keeps data for the period set out in its data retention policy. Aggregated
+    reports that no longer relate to any installation (for example "1,000 matches started last week") may be kept
+    longer.</p>
+
+  <h2 id="sharing">14. Who sees your information, and what we do not do</h2>
   <ul>
     <li><strong>Other players</strong> see what the game shows them: your display name or gamer name, colour, team and
       moves in your matches; your chat messages in your channels; your rating and tier on the leaderboard; your
       equipped skins, badge and title; your clan's tag (and, on its profile, your name, role and rating); and, if
       you are friends, your presence.</li>
     <li><strong>Service providers</strong> process data for us as described above: Google (AdMob, Play Billing, Play
-      Games, Firebase Cloud Messaging) and Unity Technologies (Unity Gaming Services and the game engine). AdMob also
+      Games, Firebase Cloud Messaging, Google Analytics for Firebase), Unity Technologies (Unity Gaming Services
+      including Unity Analytics, and the game engine) and GameAnalytics ApS (usage statistics, section 13). AdMob also
       uses data for its own advertising purposes, as explained in sections 3 and 4.</li>
     <li><strong>We (Ratio Games)</strong> can see the data stored in our Unity project (player accounts, ratings,
       match records, pass progress and owned items, clans and clan chat, reports and sanctions) through Unity's dashboard and our own moderation tool, and we use it only
@@ -305,19 +366,19 @@
       address.</li>
     <li>We do not have servers of our own. Our only server-side code is a few small Cloud Code scripts that run on
       Unity Gaming Services (for ratings, notifications, reports and sanctions, the season pass and purchases, and
-      clans). We do not add our own analytics,
-      tracking or crash reporting.</li>
+      clans). Apart from the usage statistics described in section 13, we do not add analytics, tracking or crash
+      reporting, and we never use the statistics for advertising or sell them.</li>
     <li>We do not sell your personal information, and we do not share it with anyone except as described in this
       policy, or where the law requires it.</li>
     <li>The game does not access your contacts, photos, camera, microphone or precise location.</li>
   </ul>
 
-  <h2 id="children">14. Children</h2>
+  <h2 id="children">15. Children</h2>
   <p>Pixel Strategies is not directed at children under 13 (or the minimum age required in your country), and we do
     not knowingly collect personal information from children. If you believe a child has provided personal
     information through the game, please contact us and we will help to have it removed.</p>
 
-  <h2 id="retention">15. Retention and deletion</h2>
+  <h2 id="retention">16. Retention and deletion</h2>
   <ul>
     <li><strong>Data on your device:</strong> kept until you delete it. Uninstalling the game, or clearing its
       storage in Android settings (<em>Settings &rarr; Apps &rarr; Pixel Strategies &rarr; Storage &rarr; Clear
@@ -330,6 +391,9 @@
     <li><strong>Advertising and Google data:</strong> retained by Google under its own policies. You can manage it at
       <a href="https://myaccount.google.com/">myaccount.google.com</a> and reset your advertising ID in Android
       settings.</li>
+    <li><strong>Usage statistics:</strong> kept by GameAnalytics, Unity and Google for the limited periods described in
+      section 13. Clearing the game's storage or reinstalling it gives the game new random IDs, so earlier statistics
+      are no longer connected to this installation.</li>
     <li><strong>Lobbies, invites, parties and chat:</strong> lobbies are temporary and are removed by Unity once they
       are empty or inactive; invites expire after 10 minutes; parties and chat messages in lobbies and matches are not
       stored.</li>
@@ -361,18 +425,18 @@
     match records, clan records and reports. If you were banned, we may keep the minimum needed to keep the ban in force. Most other
     data can be deleted directly by you as described above; we will help with anything else.</p>
 
-  <h2 id="rights">16. Your rights</h2>
+  <h2 id="rights">17. Your rights</h2>
   <p>Depending on where you live (for example under the GDPR in the EEA and UK, or under Turkey's KVKK), you may have
     the right to access, correct, delete or object to the processing of your personal data, to withdraw consent, and
     to complain to your local data protection authority. For data processed by Google, please use Google's tools and
     contacts linked above; for anything relating to us, email us.</p>
 
-  <h2 id="changes">17. Changes to this policy</h2>
+  <h2 id="changes">18. Changes to this policy</h2>
   <p>We may update this policy, for example when the game adds a feature or a service changes. The new version will
     be posted on this page with a new effective date. If a change is significant, we will also mention it in the
     game's update notes on Google Play.</p>
 
-  <h2 id="contact">18. Contact</h2>
+  <h2 id="contact">19. Contact</h2>
   <p>Ratio Games &middot; <a href="mailto:ratiogamestudio@gmail.com">ratiogamestudio@gmail.com</a></p>
 </main>
 

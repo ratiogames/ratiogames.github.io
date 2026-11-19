@@ -21,7 +21,7 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy.html" hreflang="en" lang="en">English</a></span>
   <h1>Piksel Savaşları gizlilik politikası</h1>
-  <p class="muted">Yürürlük tarihi: 2026-11-14</p>
+  <p class="muted">Yürürlük tarihi: 2026-11-20 &middot; Son güncelleme: 2026-11-20</p>
 </header>
 
 <main>
@@ -30,7 +30,10 @@
     Kısaca: biz (Ratio Games) sizden bizde hesap açmanızı istemiyoruz, kendimize ait sunucularımız yok ve
     verilerinizi satmıyoruz. Oyun, başta reklamlar, satın almalar, bulut kayıtları, oturum açma ve bildirimler için
     birkaç Google hizmetini; çevrim içi çok oyunculu mod, dereceli maçlar, arkadaşlar, sohbet, klanlar ve sezon kartı
-    için de Unity'nin çevrim içi hizmetlerini kullanır. Bu hizmetler aşağıda açıklandığı şekilde bazı bilgiler toplar.</p>
+    için de Unity'nin çevrim içi hizmetlerini kullanır. Yasaların gerektirdiği yerlerde izninizle, oyunun nasıl
+    oynandığını görüp onu geliştirebilmemiz için oyun ayrıca anonim kullanım istatistiklerini (analiz) GameAnalytics,
+    Unity Analytics ve Google Analytics for Firebase hizmetlerine gönderir (13. bölüm). Bu hizmetler aşağıda
+    açıklandığı şekilde bazı bilgiler toplar.</p>
 
   <nav class="toc" aria-label="İçindekiler">
     <ol>
@@ -46,6 +49,7 @@
       <li><a href="#push">Bildirimler (Firebase Cloud Messaging)</a></li>
       <li><a href="#chat">Sohbet, şikâyetler ve moderasyon</a></li>
       <li><a href="#clans">Klanlar</a></li>
+      <li><a href="#analytics">Analiz (kullanım istatistikleri)</a></li>
       <li><a href="#sharing">Bilgilerinizi kimler görür, neleri yapmayız</a></li>
       <li><a href="#children">Çocuklar</a></li>
       <li><a href="#retention">Saklama ve silme</a></li>
@@ -64,7 +68,8 @@
   <p>Kayıtlı oyunlarınız, ayarlarınız (ses düzeyi ve dil gibi), eğitim ilerlemeniz, "Reklamları Kaldır" satın alıp
     almadığınız bilgisi, özel çevrim içi oyunlarda kullandığınız ad ve renk ile çevrim içi oyunlarda son karşılaştığınız
     oyuncuların listesi (son 20 kişi) telefonunuzda, oyunun özel uygulama depolama alanında yerel olarak saklanır. Bu
-    bilgiler bize ulaşmaz. Lobi ve maç sohbetindeki mesajlar yalnızca maç sırasında oyunun belleğinde tutulur;
+    bilgiler bize ulaşmaz (kullanım istatistiklerinin parçası olan oyun diliniz ve "Reklamları Kaldır" satın alıp
+    almadığınız bilgisi hariç, bkz. 13. bölüm). Lobi ve maç sohbetindeki mesajlar yalnızca maç sırasında oyunun belleğinde tutulur;
     maçtan ayrıldığınızda veya oyunu kapattığınızda unutulur (klan sohbeti saklanır, bkz. 12. bölüm). Oyunu
     kaldırmak bunların hepsini siler (bulut kayıtlarını kullanıyorsanız 6. bölüme bakın).</p>
 
@@ -107,6 +112,8 @@
     bölgelerde yasaların gerektirdiği durumlarda benzer bir seçim gösterilebilir.</p>
   <p>Tercihinizi istediğiniz zaman oyun içinden değiştirebilirsiniz: <strong>Ayarlar &rarr; Satın alımlar ve
     gizlilik &rarr; Gizlilik seçenekleri</strong>. Bu düğme, Google'ın gerektirdiği bölgelerde görünür.</p>
+  <p>Bu formdaki tercihleriniz, oyunun <strong>kullanım istatistikleri</strong> (13. bölüm) gönderip
+    gönderemeyeceğini de belirler: izin vermezseniz hiçbir istatistik gönderilmez.</p>
 
   <h2 id="purchases">5. Satın almalar, sezon kartı ve görünümler</h2>
   <p>Oyun isteğe bağlı uygulama içi satın almalar sunar: <strong>"Reklamları Kaldır"</strong>, bir <strong>sezon
@@ -156,7 +163,7 @@
   <p><strong>Çevrim içi özellikler</strong> Unity Technologies'in Unity Gaming Services hizmetlerini kullanır:
     Authentication (oyuncu hesapları), Lobby ve Relay (maçlar), Friends (arkadaşlar), Leaderboards (sıralama
     tabloları), Cloud Save (depolama) ve Cloud Code (Unity'nin sunucularında çalışan, bizim yazdığımız küçük
-    betikler; bkz. 13. bölüm).</p>
+    betikler; bkz. 14. bölüm).</p>
   <ul>
     <li><strong>Oyuncu hesabı:</strong> oyun ana menüyü açtığında, arkadaşlık isteklerinin ve davetlerin size
       ulaşabilmesi için sizi Unity Authentication'da oturum açtırır. Play Games'te oturum açmadıysanız bu
@@ -179,7 +186,8 @@
     (İngilizce). Aynı telefonda sıralı çok oyunculu mod (tek telefonda birkaç oyuncu) cihazınızda kalır.</p>
   <p><strong>Oyun motoru:</strong> diğer Unity oyunlarında olduğu gibi, motorun kendisi oyun ilk çalıştığında cihaz
     hakkında sınırlı teknik bilgileri (donanım modeli ve işletim sistemi gibi) Unity Technologies'e gönderebilir.
-    Unity Analytics veya Unity Cloud Diagnostics'i etkinleştirmedik.</p>
+    Unity Analytics, 13. bölümde açıklandığı gibi kullanım istatistikleri için kullanılır; Unity Cloud Diagnostics'i
+    etkinleştirmedik.</p>
 
   <h2 id="ranked">8. Dereceli maçlar ve sıralama tablosu</h2>
   <p>Herkese açık her çevrim içi maç derecelidir. Dereceli oyun için Play Games oturumu gerekir. Bunun için Cloud
@@ -221,7 +229,8 @@
     geldiğinde, uzakta olduğunuz için imparatorluğunuzu yapay zekâ devraldığında ve çevrimiçi maçınız bulunduğunda.
     Reklam bildirimleri göndermeyiz; sohbet mesajları bildirim göndermez. Bildirimde onu
     gönderen oyuncunun adı (klanlarda ayrıca klanın etiketi ve adı) görünür.
-    Firebase Analytics'i veya başka bir Firebase özelliğini etkinleştirmedik.</p>
+    Oyunun Cloud Messaging dışında kullandığı tek Firebase özelliği, kullanım istatistikleri için Google Analytics for
+    Firebase'dir (13. bölüm); bildirim anahtarı ona gönderilmez.</p>
   <p>Android 13 ve sonraki sürümlerde oyun, bildirim göstermek için bir kez izin ister. Bildirimleri istediğiniz zaman
     <em>Ayarlar &rarr; Uygulamalar &rarr; Piksel Savaşları &rarr; Bildirimler</em> yoluyla kapatabilirsiniz; bu durumda
     davetler ve klan haberleri yalnızca oyun açıkken görünür. Sıra bildirimlerini oyunun Ayarlar bölümünden
@@ -301,15 +310,71 @@
     istekleri, davetleri ve sohbeti silinir; adı ve etiketi başkaları için serbest kalır. Sezon kayıtları ve daha önce
     kazanılmış ödüller saklanır.</p>
 
-  <h2 id="sharing">13. Bilgilerinizi kimler görür, neleri yapmayız</h2>
+  <h2 id="analytics">13. Analiz (kullanım istatistikleri)</h2>
+  <p>Oyunun nasıl oynandığını anlamak için (örneğin oyuncuların hangi ekranları kullandığı, yeni oyuncuların eğitimde
+    nerede bıraktığı, maçların ne kadar sürdüğü ve hangi ayarların fazla zor olduğu) oyun, üç analiz hizmetine
+    <strong>kullanım istatistikleri</strong> gönderir. Bunları yalnızca sorunları gidermek, oyunu dengelemek ve neyi
+    geliştireceğimize karar vermek için kullanırız; reklam için kullanmayız.</p>
+  <p><strong>Gönderilenler:</strong></p>
+  <ul>
+    <li><strong>uygulama etkileşimleri</strong>: açtığınız menü ekranları; bir oyunun ne zaman başlayıp bittiği ve
+      modu (tek oyunculu, senaryo, aynı telefonda sıralı, eğitim, çevrim içi), haritası, senaryosu, zorluğu ve sonucu;
+      oyun içi dönüm noktaları (ilk binanız, ilk araştırmanız veya ilk fethettiğiniz eyalet gibi) ve kısa tur sonu özetleri (tur numarası
+      ile eyalet, bina, teknoloji, ordu, altın, savaş ve müttefik sayıları gibi değerler); eğitim ilerlemesi; reklam
+      olayları (bir reklamın gösterilip gösterilmediği, tamamlanıp tamamlanmadığı veya geçilip geçilmediği ve oyunun
+      neresinde olduğu) ve satın alma olayları (ürün, sonuç, fiyat ve para birimi; ödeme bilgileriniz asla
+      gönderilmez);</li>
+    <li>birkaç <strong>ayar</strong>: oyun diliniz, Play Games'te oturum açıp açmadığınız (yalnızca evet veya hayır) ve
+      "Reklamları Kaldır" satın alıp almadığınız;</li>
+    <li>hizmetlerin kendilerinin topladığı <strong>cihaz bilgileri</strong>: cihaz modeli, işletim sistemi sürümü,
+      uygulama sürümü, ekran boyutu ve dil gibi bilgiler ile her olayın zamanı;</li>
+    <li>hizmetlerin IP adresinizden çıkardığı <strong>yaklaşık konumunuz</strong> (ülke veya bölge). Oyun GPS konumu
+      kullanmaz;</li>
+    <li>her hizmetin, oyuncuları ve oturumları sayabilmek için oyunun bu kurulumu için oluşturduğu <strong>rastgele bir
+      uygulama örneği kimliği</strong>. Oyunun depolama alanını temizlediğinizde veya oyunu yeniden yüklediğinizde
+      sıfırlanır.</li>
+  </ul>
+  <p><strong>Google hesabınıza bağlanmaz:</strong> oyun, Play Games oyuncu kimliğinizi, oyuncu adınızı, arkadaş
+    kodunuzu, sohbet mesajlarınızı veya başka hiçbir hesap bilgisini analiz hizmetlerine göndermez; bu istatistikleri
+    sizi tanımlamak için kullanmayız. GameAnalytics ve Google Analytics for Firebase yalnızca kendi rastgele uygulama
+    kurulum kimliklerini bilir. <strong>Unity Analytics bunun istisnasıdır:</strong> oyun her oyuncuyu Unity'ye giriş
+    yaptırdığı için (bölüm 7), Unity'nin analiz SDK'sı istatistikleri Unity oyuncu kimliğinizle de ilişkilendirir. Bu
+    kimlik rastgeledir ve ad içermez; ancak Play Games ile giriş yaptıysanız, Play Games profilinize bağlı olan Unity
+    hesabının kimliğidir (bölüm 6). Bunu, oyun istatistiklerini dereceler ve maç kayıtları gibi
+    çevrimiçi verilerle karşılaştırmak için kullanabiliriz.</p>
+  <p><strong>Hizmetler</strong> (verileri bizim adımıza, veri işleyen olarak işler):</p>
+  <ul>
+    <li><strong>GameAnalytics</strong> (GameAnalytics ApS, Danimarka):
+      <a href="https://gameanalytics.com/privacy">GameAnalytics Gizlilik Politikası</a> (İngilizce);</li>
+    <li><strong>Unity Analytics</strong> (Unity Technologies), Unity Gaming Services'in bir parçası:
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a> (İngilizce);</li>
+    <li><strong>Google Analytics for Firebase</strong> (Google LLC veya AEA, Birleşik Krallık ve İsviçre'deki
+      kullanıcılar için Google Ireland Limited): <a href="https://firebase.google.com/support/privacy">Firebase gizlilik
+      bilgileri</a> (İngilizce) ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.
+      Bu hizmeti Google Ads'e bağlamadık ve reklam için kullanmayız.</li>
+  </ul>
+  <p><strong>Tercihiniz:</strong> Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deyseniz, oyun başlarken
+    gösterilen izin formunda (4. bölüm) onay vermediğiniz sürece hiçbir istatistik gönderilmez. Her yerde,
+    istatistikleri istediğiniz zaman oyun içinden kapatabilirsiniz: <strong>Ayarlar &rarr; Kullanım verilerini
+    paylaş</strong>. Bu ayar kapalıyken oyun olay göndermeyi durdurur ve hizmetlerden veri toplamayı bırakmalarını
+    ister.</p>
+  <p><strong>Saklama süresi:</strong> her hizmet verileri kendi saklama kuralları kapsamında sınırlı bir süre saklar,
+    ardından siler veya anonim hâle getirir. Google Analytics for Firebase, uygulama örneği kimliğine bağlı olay
+    verilerini projemizde ayarlanan süre boyunca saklar (varsayılan olarak 2 ay, en fazla 14 ay); Unity Analytics ham
+    olay verilerini varsayılan olarak en fazla 13 ay saklar; GameAnalytics verileri kendi veri saklama politikasında
+    belirtilen süre boyunca saklar. Artık hiçbir kurulumla ilişkili olmayan toplu raporlar (örneğin "geçen hafta 1.000
+    maç başladı") daha uzun süre saklanabilir.</p>
+
+  <h2 id="sharing">14. Bilgilerinizi kimler görür, neleri yapmayız</h2>
   <ul>
     <li><strong>Diğer oyuncular</strong> oyunun onlara gösterdiklerini görür: maçlarınızda görünen adınızı veya oyuncu
       adınızı, renginizi, takımınızı ve hamlelerinizi; kanallarınızdaki sohbet mesajlarınızı; sıralama tablosundaki
       puanınızı ve kademenizi; kullandığınız görünümleri, rozeti ve unvanı; klanınızın etiketini (ve klan profilinde
       adınızı, rolünüzü ve puanınızı); arkadaşsanız durumunuzu.</li>
     <li><strong>Hizmet sağlayıcılar</strong> verileri yukarıda açıklandığı şekilde bizim adımıza işler: Google
-      (AdMob, Play Faturalandırma, Play Games, Firebase Cloud Messaging) ve Unity Technologies (Unity Gaming Services
-      ve oyun motoru). AdMob verileri 3. ve 4. bölümlerde açıklandığı gibi kendi reklam amaçları için de kullanır.</li>
+      (AdMob, Play Faturalandırma, Play Games, Firebase Cloud Messaging, Google Analytics for Firebase), Unity
+      Technologies (Unity Analytics dahil Unity Gaming Services ve oyun motoru) ve GameAnalytics ApS (kullanım
+      istatistikleri, 13. bölüm). AdMob verileri 3. ve 4. bölümlerde açıklandığı gibi kendi reklam amaçları için de kullanır.</li>
     <li><strong>Biz (Ratio Games)</strong> Unity projemizde saklanan verileri (oyuncu hesapları, puanlar, maç
       kayıtları, kart ilerlemesi ve sahip olunan öğeler, klanlar ve klan sohbeti, şikâyetler ve yaptırımlar) Unity'nin paneli ve kendi moderasyon
       aracımız üzerinden görebiliriz; bunları
@@ -319,19 +384,19 @@
       ulaşmaz.</li>
     <li>Kendimize ait sunucularımız yoktur. Sunucu tarafındaki tek kodumuz, Unity Gaming Services üzerinde çalışan
       birkaç küçük Cloud Code betiğidir (puanlar, bildirimler, şikâyetler ve yaptırımlar, sezon kartı ve satın
-      almalar ile klanlar için). Kendi analiz, izleme
-      veya çökme raporlama araçlarımızı eklemeyiz.</li>
+      almalar ile klanlar için). 13. bölümde açıklanan kullanım istatistikleri dışında analiz, izleme veya çökme
+      raporlama araçları eklemeyiz; istatistikleri asla reklam için kullanmaz veya satmayız.</li>
     <li>Kişisel bilgilerinizi satmayız ve bu politikada açıklananlar ya da yasanın gerektirdiği durumlar dışında
       kimseyle paylaşmayız.</li>
     <li>Oyun kişilerinize, fotoğraflarınıza, kameranıza, mikrofonunuza veya hassas konumunuza erişmez.</li>
   </ul>
 
-  <h2 id="children">14. Çocuklar</h2>
+  <h2 id="children">15. Çocuklar</h2>
   <p>Piksel Savaşları 13 yaşın (veya ülkenizde gerekli olan asgari yaşın) altındaki çocuklara yönelik değildir ve
     çocuklardan bilerek kişisel bilgi toplamayız. Bir çocuğun oyun aracılığıyla kişisel bilgi verdiğini
     düşünüyorsanız lütfen bizimle iletişime geçin; bu bilgilerin kaldırılmasına yardımcı oluruz.</p>
 
-  <h2 id="retention">15. Saklama ve silme</h2>
+  <h2 id="retention">16. Saklama ve silme</h2>
   <ul>
     <li><strong>Cihazınızdaki veriler:</strong> siz silene kadar saklanır. Oyunu kaldırmak veya Android ayarlarından
       depolama alanını temizlemek (<em>Ayarlar &rarr; Uygulamalar &rarr; Piksel Savaşları &rarr; Depolama &rarr;
@@ -344,6 +409,9 @@
     <li><strong>Reklam ve Google verileri:</strong> Google tarafından kendi politikaları kapsamında saklanır. Bu
       verileri <a href="https://myaccount.google.com/">myaccount.google.com</a> adresinden yönetebilir ve reklam
       kimliğinizi Android ayarlarından sıfırlayabilirsiniz.</li>
+    <li><strong>Kullanım istatistikleri:</strong> GameAnalytics, Unity ve Google tarafından 13. bölümde açıklanan sınırlı
+      süreler boyunca saklanır. Oyunun depolama alanını temizlemek veya oyunu yeniden yüklemek oyuna yeni rastgele
+      kimlikler verir; böylece önceki istatistikler artık bu kurulumla ilişkilendirilmez.</li>
     <li><strong>Lobiler, davetler, partiler ve sohbet:</strong> lobiler geçicidir ve boşaldıklarında veya etkin
       olmadıklarında Unity tarafından kaldırılır; davetler 10 dakika sonra geçerliliğini yitirir; partiler ile lobi ve
       maç sohbetindeki mesajlar saklanmaz.</li>
@@ -376,19 +444,19 @@
     bilgiyi saklayabiliriz. Diğer verilerin çoğunu yukarıda açıklandığı şekilde doğrudan kendiniz silebilirsiniz;
     geri kalan her konuda yardımcı oluruz.</p>
 
-  <h2 id="rights">16. Haklarınız</h2>
+  <h2 id="rights">17. Haklarınız</h2>
   <p>Yaşadığınız yere bağlı olarak (örneğin Türkiye'de KVKK veya AEA ve Birleşik Krallık'ta GDPR kapsamında), kişisel
     verilerinize erişme, bunları düzeltme, silme veya işlenmesine itiraz etme, izninizi geri çekme ve yerel veri
     koruma otoritesine şikâyette bulunma haklarına sahip olabilirsiniz. Google tarafından işlenen veriler için lütfen
     yukarıda bağlantısı verilen Google araçlarını ve iletişim kanallarını kullanın; bizimle ilgili her konuda bize
     e-posta gönderin.</p>
 
-  <h2 id="changes">17. Bu politikadaki değişiklikler</h2>
+  <h2 id="changes">18. Bu politikadaki değişiklikler</h2>
   <p>Bu politikayı, örneğin oyuna yeni bir özellik eklendiğinde veya bir hizmet değiştiğinde güncelleyebiliriz. Yeni
     sürüm, yeni bir yürürlük tarihiyle bu sayfada yayınlanır. Önemli bir değişiklik olursa bunu Google Play'deki
     oyun güncelleme notlarında da belirtiriz.</p>
 
-  <h2 id="contact">18. İletişim</h2>
+  <h2 id="contact">19. İletişim</h2>
   <p>Ratio Games &middot; <a href="mailto:ratiogamestudio@gmail.com">ratiogamestudio@gmail.com</a></p>
 </main>
 
