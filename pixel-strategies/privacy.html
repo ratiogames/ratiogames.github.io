@@ -17,15 +17,16 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy-tr.html" hreflang="tr" lang="tr">Türkçe</a></span>
   <h1>Pixel Strategies privacy policy</h1>
-  <p class="muted">Effective date: 2026-11-22 &middot; Last updated: 2026-11-21</p>
+  <p class="muted">Effective date: 2026-11-25 &middot; Last updated: 2026-11-24</p>
 </header>
 
 <main>
   <p>This policy explains what information is collected when you play <strong>Pixel Strategies</strong> on Android,
     who collects it, why, and the choices you have. The short version: we (Ratio Games) do not ask you to create an
-    account with us, do not have servers of our own, and do not sell your data. The game uses a few Google services,
-    mainly for ads, purchases, cloud saves, sign-in and notifications, and Unity's online services for online
-    multiplayer, ranked matches, friends, chat, clans and the season pass. With your consent where the law requires it,
+    account with us, do not have servers of our own, and do not sell your data. The game shows ads from Unity Ads
+    (section 3), uses a few Google services, mainly for the ads consent form, purchases, cloud saves, sign-in and
+    notifications, and Unity's online services for online multiplayer, ranked matches, friends, chat, clans and the
+    season pass. With your consent where the law requires it,
     the game also sends anonymous usage statistics (analytics) to GameAnalytics, Unity Analytics and Google Analytics for
     Firebase, so we can see how the game is played and improve it (section 13). Those services collect some information
     as described below.</p>
@@ -34,7 +35,7 @@
     <ol>
       <li><a href="#who">Who we are</a></li>
       <li><a href="#device">Information that stays on your device</a></li>
-      <li><a href="#ads">Advertising (Google AdMob)</a></li>
+      <li><a href="#ads">Advertising (Unity Ads)</a></li>
       <li><a href="#consent">Consent and personalised ads</a></li>
       <li><a href="#purchases">Purchases, season pass and skins</a></li>
       <li><a href="#cloud">Sign-in and cloud saves (Google Play Games)</a></li>
@@ -68,26 +69,38 @@
     forgotten when you leave it or close the game (clan chat is stored, see section 12). Uninstalling the game
     deletes all of this (unless you use cloud saves, see section 6).</p>
 
-  <h2 id="ads">3. Advertising (Google AdMob)</h2>
+  <h2 id="ads">3. Advertising (Unity Ads)</h2>
   <p>The game is free and is paid for by ads. It shows full-screen ads between matches and offers optional rewarded
     ads, which you can choose to watch in exchange for an in-game bonus. Ads are provided by
-    <strong>Google AdMob</strong> (Google LLC, or Google Ireland Limited for users in the EEA, UK and Switzerland).</p>
-  <p>To serve ads, the Google Mobile Ads SDK built into the game collects and sends to Google information such as:</p>
+    <strong>Unity Ads</strong> from Unity Technologies (Unity Software Inc. and its affiliates), delivered through the
+    <strong>Unity LevelPlay</strong> ad mediation SDK. Unity Ads is the only ad network the game uses. Versions of the
+    game up to version code 43 (released until November 2026) showed ads from Google AdMob instead; if you still use
+    one of those versions, Google collects the ad data described in the policy version that applied then (advertising
+    ID, IP address and approximate location, ad interactions, device information and diagnostics), under the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>To serve ads, the Unity Ads and Unity LevelPlay SDKs built into the game collect and send to Unity information
+    such as:</p>
   <ul>
-    <li>your device's <strong>advertising ID</strong> (a resettable ID provided by Android);</li>
-    <li>your <strong>IP address</strong>, which Google may use to estimate your approximate location (for example
-      your country or city). The game does not ask for or use precise GPS location;</li>
-    <li><strong>ad interactions</strong>, such as which ads were shown, viewed or tapped;</li>
+    <li>your device's <strong>advertising ID</strong> (a resettable ID provided by Android) and other device
+      identifiers, such as an ID created by the SDK for this installation;</li>
+    <li>your <strong>IP address</strong>, which Unity may use to estimate your approximate location (for example your
+      country or city). The game does not ask for or use precise GPS location;</li>
+    <li><strong>ad interactions</strong>, such as which ads were requested, shown, viewed, completed or tapped, and
+      how long the game has been used;</li>
+    <li>information about <strong>in-app purchases</strong> made in the game, where the Unity Ads SDK collects it
+      (never your payment details);</li>
     <li><strong>device information and diagnostics</strong>, such as device model, operating system version,
-      language, app version, and performance and crash data related to ads.</li>
+      language, app version, network type, and performance and error data related to ads.</li>
   </ul>
-  <p>Google uses this information to show ads, to measure how ads perform, to limit how often you see the same ad,
-    and to detect and prevent fraud and abuse. Depending on your consent choices (see below) it may also be used to
-    personalise ads. Google processes this information under its own privacy policy:</p>
+  <p>Unity uses this information to show ads, to measure how ads perform, to limit how often you see the same ad, to
+    detect and prevent fraud and abuse, and to improve its services. Depending on your consent choices (see below) it
+    may also be used to personalise ads. For its advertising, Unity acts as an independent controller of this data
+    and processes it under its own privacy policy, which also explains how to ask Unity to access or delete it:</p>
   <ul>
-    <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-    <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a></li>
+    <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></li>
   </ul>
+  <p>The game also receives from LevelPlay an estimate of how much each ad earned (in US dollars); it is sent with the
+    ad events to our usage statistics (section 13).</p>
   <p>If you buy "Remove Ads", the game stops showing ads between matches and lets you claim bonuses without watching
     an ad. The ads SDK may still be started when the game launches (for example to keep your consent settings up to
     date), but no ads are shown to you through it.</p>
@@ -97,11 +110,14 @@
 
   <h2 id="consent">4. Consent and personalised ads</h2>
   <p>If you are in the European Economic Area, the United Kingdom or Switzerland, the game shows a consent form from
-    Google (the Google User Messaging Platform) before any ads are requested. There you can choose whether Google and
-    its advertising partners may use your data for <strong>personalised ads</strong> (ads based on your interests and
-    activity) or only for <strong>non-personalised ads</strong> (ads based on general context such as the app and
-    your approximate location). Non-personalised ads still use some data, for example for frequency capping,
-    measurement and fraud prevention. Where required by law in other regions, a similar choice may be shown.</p>
+    Google (the Google User Messaging Platform) before any ads are requested. The form is still provided by Google,
+    but the ads come from Unity Ads: the game passes your answer to Unity Ads (through Unity LevelPlay). There you can
+    choose whether Unity and its advertising partners may use your data for <strong>personalised ads</strong> (ads
+    based on your interests and activity) or only for <strong>non-personalised ads</strong> (ads based on general
+    context such as the app and your approximate location). Non-personalised ads still use some data, for example for
+    frequency capping, measurement and fraud prevention. Where required by law in other regions (for example a
+    "do not sell or share" choice in some US states), a similar choice may be shown, and it is passed to Unity Ads in
+    the same way.</p>
   <p>Your choices in this form also decide whether the game may send <strong>usage statistics</strong> (section 13):
     if you don't consent, none are sent.</p>
   <p>You can change your choice at any time in the game: open <strong>Settings &rarr; Purchases &amp; privacy &rarr;
@@ -335,9 +351,10 @@
       <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>;</li>
     <li><strong>Google Analytics for Firebase</strong> (Google LLC, or Google Ireland Limited for users in the EEA, UK
       and Switzerland): <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the
-      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. We have linked it to our AdMob account
-      (section 3) only to measure how much the ads in the game earn; we have not linked it to Google Ads and do not
-      use it to target ads.</li>
+      <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The game itself reports the estimated
+      amount each ad earned (section 3) to Google Analytics for Firebase, only to measure how much the ads in the game
+      earn. Firebase does not show or choose ads in the game; we have not linked it to Google Ads and do not use it to
+      target ads.</li>
   </ul>
   <p><strong>Your choice:</strong> if you are in the European Economic Area, the United Kingdom or Switzerland, no
     statistics are sent unless you agree in the consent form shown when the game starts (section 4). Everywhere, you
@@ -356,10 +373,12 @@
       moves in your matches; your chat messages in your channels; your rating and tier on the leaderboard; your
       equipped skins, badge and title; your clan's tag (and, on its profile, your name, role and rating); and, if
       you are friends, your presence.</li>
-    <li><strong>Service providers</strong> process data for us as described above: Google (AdMob, Play Billing, Play
-      Games, Firebase Cloud Messaging, Google Analytics for Firebase), Unity Technologies (Unity Gaming Services
-      including Unity Analytics, and the game engine) and GameAnalytics ApS (usage statistics, section 13). AdMob also
-      uses data for its own advertising purposes, as explained in sections 3 and 4.</li>
+    <li><strong>Service providers</strong> process data for us as described above: Google (the ads consent form, Play
+      Billing, Play Games, Firebase Cloud Messaging, Google Analytics for Firebase), Unity Technologies (Unity Gaming
+      Services including Unity Analytics, and the game engine) and GameAnalytics ApS (usage statistics, section 13).</li>
+    <li><strong>Unity Ads</strong> (Unity Technologies, through Unity LevelPlay) receives the ad data described in
+      section 3 and also uses it for its own advertising purposes, as an independent controller, as explained in
+      sections 3 and 4. Older versions of the game (up to version code 43) sent ad data to Google AdMob instead.</li>
     <li><strong>We (Ratio Games)</strong> can see the data stored in our Unity project (player accounts, ratings,
       match records, pass progress and owned items, clans and clan chat, reports and sanctions) through Unity's dashboard and our own moderation tool, and we use it only
       to run the online features and purchases, keep ranked play fair and handle reports.</li>
@@ -389,9 +408,13 @@
       choose Pixel Strategies under the individual games' data), or in Google Drive on the web under <em>Settings
       &rarr; Manage apps &rarr; Pixel Strategies &rarr; Delete hidden app data</em>. Menu names may change slightly
       as Google updates its apps.</li>
-    <li><strong>Advertising and Google data:</strong> retained by Google under its own policies. You can manage it at
-      <a href="https://myaccount.google.com/">myaccount.google.com</a> and reset your advertising ID in Android
-      settings.</li>
+    <li><strong>Advertising data:</strong> retained by Unity under its own policies (and, for older versions of the
+      game that used Google AdMob, by Google under its policies). You can ask Unity to access or delete it as
+      described in the
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>,
+      and reset your advertising ID in Android settings.</li>
+    <li><strong>Other Google data</strong> (consent form, Play Games, purchases, Firebase): retained by Google under its
+      own policies. You can manage it at <a href="https://myaccount.google.com/">myaccount.google.com</a>.</li>
     <li><strong>Usage statistics:</strong> kept by GameAnalytics, Unity and Google for the limited periods described in
       section 13. Clearing the game's storage or reinstalling it gives the game new random IDs, so earlier statistics
       are no longer connected to this installation.</li>
@@ -429,8 +452,8 @@
   <h2 id="rights">17. Your rights</h2>
   <p>Depending on where you live (for example under the GDPR in the EEA and UK, or under Turkey's KVKK), you may have
     the right to access, correct, delete or object to the processing of your personal data, to withdraw consent, and
-    to complain to your local data protection authority. For data processed by Google, please use Google's tools and
-    contacts linked above; for anything relating to us, email us.</p>
+    to complain to your local data protection authority. For data processed by Google or by Unity (including Unity
+    Ads), please use their tools and contacts linked above; for anything relating to us, email us.</p>
 
   <h2 id="changes">18. Changes to this policy</h2>
   <p>We may update this policy, for example when the game adds a feature or a service changes. The new version will

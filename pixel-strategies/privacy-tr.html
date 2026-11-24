@@ -21,16 +21,16 @@
   <a class="brand" href="../index.html">Ratio Games</a>
   <span class="lang"><a href="privacy.html" hreflang="en" lang="en">English</a></span>
   <h1>Pixel Strategies gizlilik politikası</h1>
-  <p class="muted">Yürürlük tarihi: 2026-11-22 &middot; Son güncelleme: 2026-11-21</p>
+  <p class="muted">Yürürlük tarihi: 2026-11-25 &middot; Son güncelleme: 2026-11-24</p>
 </header>
 
 <main>
   <p>Bu politika, Android'de <strong>Pixel Strategies</strong> oynarken hangi
     bilgilerin toplandığını, bunları kimin topladığını, neden toplandığını ve sahip olduğunuz seçenekleri açıklar.
     Kısaca: biz (Ratio Games) sizden bizde hesap açmanızı istemiyoruz, kendimize ait sunucularımız yok ve
-    verilerinizi satmıyoruz. Oyun, başta reklamlar, satın almalar, bulut kayıtları, oturum açma ve bildirimler için
-    birkaç Google hizmetini; çevrim içi çok oyunculu mod, dereceli maçlar, arkadaşlar, sohbet, klanlar ve sezon kartı
-    için de Unity'nin çevrim içi hizmetlerini kullanır. Yasaların gerektirdiği yerlerde izninizle, oyunun nasıl
+    verilerinizi satmıyoruz. Oyun, Unity Ads reklamları gösterir (3. bölüm); başta reklam izin formu, satın almalar,
+    bulut kayıtları, oturum açma ve bildirimler için birkaç Google hizmetini; çevrim içi çok oyunculu mod, dereceli
+    maçlar, arkadaşlar, sohbet, klanlar ve sezon kartı için de Unity'nin çevrim içi hizmetlerini kullanır. Yasaların gerektirdiği yerlerde izninizle, oyunun nasıl
     oynandığını görüp onu geliştirebilmemiz için oyun ayrıca anonim kullanım istatistiklerini (analiz) GameAnalytics,
     Unity Analytics ve Google Analytics for Firebase hizmetlerine gönderir (13. bölüm). Bu hizmetler aşağıda
     açıklandığı şekilde bazı bilgiler toplar.</p>
@@ -39,7 +39,7 @@
     <ol>
       <li><a href="#who">Biz kimiz</a></li>
       <li><a href="#device">Cihazınızda kalan bilgiler</a></li>
-      <li><a href="#ads">Reklamlar (Google AdMob)</a></li>
+      <li><a href="#ads">Reklamlar (Unity Ads)</a></li>
       <li><a href="#consent">İzin ve kişiselleştirilmiş reklamlar</a></li>
       <li><a href="#purchases">Satın almalar, sezon kartı ve görünümler</a></li>
       <li><a href="#cloud">Oturum açma ve bulut kayıtları (Google Play Games)</a></li>
@@ -73,28 +73,40 @@
     maçtan ayrıldığınızda veya oyunu kapattığınızda unutulur (klan sohbeti saklanır, bkz. 12. bölüm). Oyunu
     kaldırmak bunların hepsini siler (bulut kayıtlarını kullanıyorsanız 6. bölüme bakın).</p>
 
-  <h2 id="ads">3. Reklamlar (Google AdMob)</h2>
+  <h2 id="ads">3. Reklamlar (Unity Ads)</h2>
   <p>Oyun ücretsizdir ve reklamlarla finanse edilir. Maçlar arasında tam ekran reklamlar gösterir ve oyun içi bir
-    bonus karşılığında izlemeyi seçebileceğiniz isteğe bağlı ödüllü reklamlar sunar. Reklamlar
-    <strong>Google AdMob</strong> tarafından sağlanır (Google LLC; AEA, Birleşik Krallık ve İsviçre'deki kullanıcılar
-    için Google Ireland Limited).</p>
-  <p>Reklam sunmak için oyuna entegre Google Mobile Ads SDK'sı aşağıdaki gibi bilgileri toplar ve Google'a gönderir:</p>
+    bonus karşılığında izlemeyi seçebileceğiniz isteğe bağlı ödüllü reklamlar sunar. Reklamlar, Unity Technologies
+    (Unity Software Inc. ve bağlı şirketleri) tarafından <strong>Unity Ads</strong> ile sağlanır ve
+    <strong>Unity LevelPlay</strong> reklam aracılık (mediation) SDK'sı üzerinden sunulur. Oyunun kullandığı tek reklam
+    ağı Unity Ads'tir. Oyunun 43 numaralı sürüm koduna kadarki sürümleri (Kasım 2026'ya kadar yayınlananlar) bunun
+    yerine Google AdMob reklamları gösteriyordu; bu sürümlerden birini hâlâ kullanıyorsanız Google, o dönemde geçerli
+    olan politika sürümünde açıklanan reklam verilerini (reklam kimliği, IP adresi ve yaklaşık konum, reklam
+    etkileşimleri, cihaz bilgileri ve tanılama verileri)
+    <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> kapsamında toplar.</p>
+  <p>Reklam sunmak için oyuna entegre Unity Ads ve Unity LevelPlay SDK'ları aşağıdaki gibi bilgileri toplar ve
+    Unity'ye gönderir:</p>
   <ul>
-    <li>cihazınızın <strong>reklam kimliği</strong> (Android tarafından sağlanan, sıfırlanabilir bir kimlik);</li>
-    <li>Google'ın yaklaşık konumunuzu (örneğin ülkenizi veya şehrinizi) tahmin etmek için kullanabileceği
+    <li>cihazınızın <strong>reklam kimliği</strong> (Android tarafından sağlanan, sıfırlanabilir bir kimlik) ve SDK'nın
+      bu kurulum için oluşturduğu kimlik gibi diğer cihaz tanımlayıcıları;</li>
+    <li>Unity'nin yaklaşık konumunuzu (örneğin ülkenizi veya şehrinizi) tahmin etmek için kullanabileceği
       <strong>IP adresiniz</strong>. Oyun hassas GPS konumunuzu istemez ve kullanmaz;</li>
-    <li>hangi reklamların gösterildiği, izlendiği veya dokunulduğu gibi <strong>reklam etkileşimleri</strong>;</li>
-    <li>cihaz modeli, işletim sistemi sürümü, dil, uygulama sürümü ve reklamlarla ilgili performans ve çökme
+    <li>hangi reklamların istendiği, gösterildiği, izlendiği, tamamlandığı veya dokunulduğu ve oyunun ne kadar süre
+      kullanıldığı gibi <strong>reklam etkileşimleri</strong>;</li>
+    <li>Unity Ads SDK'sının topladığı durumlarda oyunda yapılan <strong>uygulama içi satın almalar</strong> hakkında
+      bilgiler (ödeme bilgileriniz asla toplanmaz);</li>
+    <li>cihaz modeli, işletim sistemi sürümü, dil, uygulama sürümü, ağ türü ve reklamlarla ilgili performans ve hata
       verileri gibi <strong>cihaz bilgileri ve tanılama verileri</strong>.</li>
   </ul>
-  <p>Google bu bilgileri reklam göstermek, reklamların performansını ölçmek, aynı reklamı ne sıklıkta gördüğünüzü
-    sınırlamak ve dolandırıcılığı ve kötüye kullanımı tespit edip önlemek için kullanır. İzin tercihlerinize bağlı
-    olarak (aşağıya bakın) reklamları kişiselleştirmek için de kullanılabilir. Google bu bilgileri kendi gizlilik
-    politikası kapsamında işler:</p>
+  <p>Unity bu bilgileri reklam göstermek, reklamların performansını ölçmek, aynı reklamı ne sıklıkta gördüğünüzü
+    sınırlamak, dolandırıcılığı ve kötüye kullanımı tespit edip önlemek ve hizmetlerini geliştirmek için kullanır.
+    İzin tercihlerinize bağlı olarak (aşağıya bakın) reklamları kişiselleştirmek için de kullanılabilir. Unity, kendi
+    reklam faaliyetleri için bu verilerin bağımsız veri sorumlusudur ve bunları, verilere erişim veya silme talebini
+    Unity'ye nasıl iletebileceğinizi de açıklayan kendi gizlilik politikası kapsamında işler:</p>
   <ul>
-    <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
-    <li><a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerimizi kullanan sitelerden veya uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+    <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a> (İngilizce)</li>
   </ul>
+  <p>Oyun ayrıca LevelPlay'den her reklamın tahmini olarak ne kadar kazandırdığını (ABD doları cinsinden) alır; bu
+    bilgi reklam olaylarıyla birlikte kullanım istatistiklerimize (13. bölüm) gönderilir.</p>
   <p>"Reklamları Kaldır"ı satın alırsanız oyun maçlar arasında reklam göstermeyi bırakır ve bonusları reklam
     izlemeden almanıza izin verir. Reklam SDK'sı oyun açılırken yine de başlatılabilir (örneğin izin ayarlarınızı
     güncel tutmak için), ancak bu yolla size reklam gösterilmez.</p>
@@ -104,12 +116,15 @@
 
   <h2 id="consent">4. İzin ve kişiselleştirilmiş reklamlar</h2>
   <p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deyseniz oyun, herhangi bir reklam istenmeden önce
-    Google'ın bir izin formunu (Google User Messaging Platform) gösterir. Burada Google'ın ve reklam ortaklarının
-    verilerinizi <strong>kişiselleştirilmiş reklamlar</strong> (ilgi alanlarınıza ve etkinliğinize dayalı reklamlar)
-    için mi, yoksa yalnızca <strong>kişiselleştirilmemiş reklamlar</strong> (uygulama ve yaklaşık konumunuz gibi genel
-    bağlama dayalı reklamlar) için mi kullanabileceğini seçebilirsiniz. Kişiselleştirilmemiş reklamlar da bazı
-    verileri kullanır; örneğin gösterim sıklığı sınırlaması, ölçüm ve dolandırıcılığın önlenmesi için. Diğer
-    bölgelerde yasaların gerektirdiği durumlarda benzer bir seçim gösterilebilir.</p>
+    Google'ın bir izin formunu (Google User Messaging Platform) gösterir. Form hâlâ Google tarafından sağlanır, ancak
+    reklamlar Unity Ads'ten gelir: oyun, yanıtınızı (Unity LevelPlay üzerinden) Unity Ads'e iletir. Burada Unity'nin
+    ve reklam ortaklarının verilerinizi <strong>kişiselleştirilmiş reklamlar</strong> (ilgi alanlarınıza ve
+    etkinliğinize dayalı reklamlar) için mi, yoksa yalnızca <strong>kişiselleştirilmemiş reklamlar</strong> (uygulama
+    ve yaklaşık konumunuz gibi genel bağlama dayalı reklamlar) için mi kullanabileceğini seçebilirsiniz.
+    Kişiselleştirilmemiş reklamlar da bazı verileri kullanır; örneğin gösterim sıklığı sınırlaması, ölçüm ve
+    dolandırıcılığın önlenmesi için. Diğer bölgelerde yasaların gerektirdiği durumlarda (örneğin bazı ABD
+    eyaletlerindeki "satmayın veya paylaşmayın" seçimi) benzer bir seçim gösterilebilir ve bu seçim de aynı şekilde
+    Unity Ads'e iletilir.</p>
   <p>Tercihinizi istediğiniz zaman oyun içinden değiştirebilirsiniz: <strong>Ayarlar &rarr; Satın alımlar ve
     gizlilik &rarr; Gizlilik seçenekleri</strong>. Bu düğme, Google'ın gerektirdiği bölgelerde görünür.</p>
   <p>Bu formdaki tercihleriniz, oyunun <strong>kullanım istatistikleri</strong> (13. bölüm) gönderip
@@ -351,8 +366,9 @@
     <li><strong>Google Analytics for Firebase</strong> (Google LLC veya AEA, Birleşik Krallık ve İsviçre'deki
       kullanıcılar için Google Ireland Limited): <a href="https://firebase.google.com/support/privacy">Firebase gizlilik
       bilgileri</a> (İngilizce) ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.
-      Bu hizmeti yalnızca oyundaki reklamların ne kadar kazandırdığını ölçmek için AdMob hesabımıza (3. bölüm)
-      bağladık; Google Ads'e bağlamadık ve reklam hedeflemek için kullanmayız.</li>
+      Oyun, her reklamın tahmini olarak ne kadar kazandırdığını (3. bölüm) yalnızca oyundaki reklamların ne kadar
+      kazandırdığını ölçmek için Google Analytics for Firebase'e kendisi bildirir. Firebase oyunda reklam göstermez
+      veya seçmez; bu hizmeti Google Ads'e bağlamadık ve reklam hedeflemek için kullanmayız.</li>
   </ul>
   <p><strong>Tercihiniz:</strong> Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deyseniz, oyun başlarken
     gösterilen izin formunda (4. bölüm) onay vermediğiniz sürece hiçbir istatistik gönderilmez. Her yerde,
@@ -373,9 +389,13 @@
       puanınızı ve kademenizi; kullandığınız görünümleri, rozeti ve unvanı; klanınızın etiketini (ve klan profilinde
       adınızı, rolünüzü ve puanınızı); arkadaşsanız durumunuzu.</li>
     <li><strong>Hizmet sağlayıcılar</strong> verileri yukarıda açıklandığı şekilde bizim adımıza işler: Google
-      (AdMob, Play Faturalandırma, Play Games, Firebase Cloud Messaging, Google Analytics for Firebase), Unity
-      Technologies (Unity Analytics dahil Unity Gaming Services ve oyun motoru) ve GameAnalytics ApS (kullanım
-      istatistikleri, 13. bölüm). AdMob verileri 3. ve 4. bölümlerde açıklandığı gibi kendi reklam amaçları için de kullanır.</li>
+      (reklam izin formu, Play Faturalandırma, Play Games, Firebase Cloud Messaging, Google Analytics for Firebase),
+      Unity Technologies (Unity Analytics dahil Unity Gaming Services ve oyun motoru) ve GameAnalytics ApS (kullanım
+      istatistikleri, 13. bölüm).</li>
+    <li><strong>Unity Ads</strong> (Unity Technologies, Unity LevelPlay üzerinden) 3. bölümde açıklanan reklam
+      verilerini alır ve bunları 3. ve 4. bölümlerde açıklandığı gibi bağımsız veri sorumlusu olarak kendi reklam
+      amaçları için de kullanır. Oyunun eski sürümleri (43 numaralı sürüm koduna kadar) reklam verilerini bunun yerine
+      Google AdMob'a gönderiyordu.</li>
     <li><strong>Biz (Ratio Games)</strong> Unity projemizde saklanan verileri (oyuncu hesapları, puanlar, maç
       kayıtları, kart ilerlemesi ve sahip olunan öğeler, klanlar ve klan sohbeti, şikâyetler ve yaptırımlar) Unity'nin paneli ve kendi moderasyon
       aracımız üzerinden görebiliriz; bunları
@@ -407,9 +427,14 @@
       ayrı oyun verileri altında Piksel Savaşları'nı ya da Pixel Strategies'i seçin) veya web'de Google Drive'da <em>Ayarlar &rarr;
       Uygulamaları yönet &rarr; Pixel Strategies &rarr; Gizli uygulama verilerini sil</em> yoluyla silebilirsiniz.
       Google uygulamalarını güncelledikçe menü adları biraz değişebilir.</li>
-    <li><strong>Reklam ve Google verileri:</strong> Google tarafından kendi politikaları kapsamında saklanır. Bu
-      verileri <a href="https://myaccount.google.com/">myaccount.google.com</a> adresinden yönetebilir ve reklam
-      kimliğinizi Android ayarlarından sıfırlayabilirsiniz.</li>
+    <li><strong>Reklam verileri:</strong> Unity tarafından kendi politikaları kapsamında saklanır (Google AdMob
+      kullanan eski oyun sürümleri için Google tarafından kendi politikaları kapsamında). Bu verilere erişim veya
+      silme talebinizi
+      <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a>'nda
+      açıklandığı şekilde Unity'ye iletebilir ve reklam kimliğinizi Android ayarlarından sıfırlayabilirsiniz.</li>
+    <li><strong>Diğer Google verileri</strong> (izin formu, Play Games, satın almalar, Firebase): Google tarafından kendi
+      politikaları kapsamında saklanır. Bu verileri <a href="https://myaccount.google.com/">myaccount.google.com</a>
+      adresinden yönetebilirsiniz.</li>
     <li><strong>Kullanım istatistikleri:</strong> GameAnalytics, Unity ve Google tarafından 13. bölümde açıklanan sınırlı
       süreler boyunca saklanır. Oyunun depolama alanını temizlemek veya oyunu yeniden yüklemek oyuna yeni rastgele
       kimlikler verir; böylece önceki istatistikler artık bu kurulumla ilişkilendirilmez.</li>
@@ -448,9 +473,9 @@
   <h2 id="rights">17. Haklarınız</h2>
   <p>Yaşadığınız yere bağlı olarak (örneğin Türkiye'de KVKK veya AEA ve Birleşik Krallık'ta GDPR kapsamında), kişisel
     verilerinize erişme, bunları düzeltme, silme veya işlenmesine itiraz etme, izninizi geri çekme ve yerel veri
-    koruma otoritesine şikâyette bulunma haklarına sahip olabilirsiniz. Google tarafından işlenen veriler için lütfen
-    yukarıda bağlantısı verilen Google araçlarını ve iletişim kanallarını kullanın; bizimle ilgili her konuda bize
-    e-posta gönderin.</p>
+    koruma otoritesine şikâyette bulunma haklarına sahip olabilirsiniz. Google veya Unity (Unity Ads dahil)
+    tarafından işlenen veriler için lütfen yukarıda bağlantısı verilen araçları ve iletişim kanallarını kullanın;
+    bizimle ilgili her konuda bize e-posta gönderin.</p>
 
   <h2 id="changes">18. Bu politikadaki değişiklikler</h2>
   <p>Bu politikayı, örneğin oyuna yeni bir özellik eklendiğinde veya bir hizmet değiştiğinde güncelleyebiliriz. Yeni
